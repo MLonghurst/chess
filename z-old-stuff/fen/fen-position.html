@@ -1,0 +1,9 @@
+<script type='module'>
+import { FenPosition } from './fen-position.js';
+const fen = 'rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2';
+const fenPosition = new FenPosition(fen);
+console.log(fenPosition.getSquares());
+/* const fenSquares = fenPosition.fenSquares;
+console.log(fenSquares.length)
+console.log(fenSquares.filter(fenSquare => fenSquare.rank < 2)); */
+</script>

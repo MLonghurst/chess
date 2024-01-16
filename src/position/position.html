@@ -1,0 +1,12 @@
+<script type='module'>
+  import { Position } from './position.js';
+  const position = new Position();
+  const fen = 'rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1';
+  position.updateFromFen(fen);
+  console.log(position);
+  console.log('getMoves');
+  const move = position.getMoves()[5];
+  console.log(move);
+  position.updateFromMove(move);
+  console.log(position.getFen());
+</script>
