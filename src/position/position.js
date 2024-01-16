@@ -49,18 +49,29 @@ export class Position {
   #getSquares() {
     const ranks = [1, 2, 3, 4, 5, 6, 7, 8];
     const files = [1, 2, 3, 4, 5, 6, 7, 8];
-    return ranks.map(rank => files.map(file => new Square({ rank, file, position: this }))).flat();
+    return ranks.map(rank => files.map(file => new Square({ 
+      rank, 
+      file, 
+      position: this 
+    }))).flat();
   }
 
   #getPlayers() {
     const colors = ['white', 'black'];
-    return colors.map(color => new Player({ color, position: this }));
+    return colors.map(color => new Player({ 
+      color, 
+      position: this 
+    }));
   }
 
   #getCastlingStatuses() {
     const types = ['kingside', 'queenside'];
     const colors = ['white', 'black'];
-    return types.map(type => colors.map(color => new CastlingStatus({ type, color, position: this }))).flat();
+    return types.map(type => colors.map(color => new CastlingStatus({ 
+      type, 
+      color, 
+      position: this 
+    }))).flat();
   }
 
   // utilities
