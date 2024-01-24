@@ -1,6 +1,8 @@
 # Chess Position
 
-Chess Position is a object-oriented chess validator that follows clean code principles. The class `Position` can do the following:
+Chess Position is a object-oriented chess validator that follows clean code principles. 
+
+The class `Position` can do the following:
 ### Create a new chess position from a Fordyce-Edwards Notation (FEN) string
 ```
 import { Position } from './position.js';
@@ -25,6 +27,6 @@ position.move(move);
 const newFen = position.getFen();
 ```
 
-Chess Position allows for castling capturing en passant. 
+Chess Position allows for castling, capturing en passant and promotion. 
 
 Chess Position is still being refined and has some severe limitations. It cannot yet detect if a player is in checkmate or if a stalemate has been reached by repetition of moves, insufficient material, the 50-move rule, etc. Its functionality is presently limited to the above. 
