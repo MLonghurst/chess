@@ -25,6 +25,6 @@ position.move(move);
 const newFen = position.getFen();
 ```
 
-Position allows for castling capturing en passant. 
+Chess Position allows for castling capturing en passant. 
 
-Position is still being refined and currently has some severe limitations. For example, it cannot yet detect if a player is in checkmate or if a stalemate has been reached. Its functionality is limited to the above. 
+Chess Position is still being refined and has some severe limitations. It cannot yet detect if a player is in checkmate or if a stalemate has been reached by repetition of moves, insufficient material, the 50-move rule, etc. Its functionality is presently limited to the above. 
